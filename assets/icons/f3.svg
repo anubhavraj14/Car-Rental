@@ -1,0 +1,18 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="60" height="61" fill="none" viewBox="0 0 60 61">
+  <g clip-path="url(#a)">
+    <mask id="b" width="60" height="61" x="0" y="0" maskUnits="userSpaceOnUse" style="mask-type:luminance">
+      <path fill="#fff" d="M60 .03H0v60h60v-60Z"/>
+    </mask>
+    <g mask="url(#b)">
+      <path fill="#EEF1FB" d="m8.756 36.778 26.55-26.55a4.688 4.688 0 0 1 6.629 0l-5.04-5.04a4.687 4.687 0 0 0-6.629 0l-26.55 26.55a4.687 4.687 0 0 0 0 6.63l5.04 5.039a4.687 4.687 0 0 1 0-6.63Z"/>
+      <path stroke="#405FF2" stroke-linecap="round" stroke-linejoin="round" stroke-miterlimit="10" stroke-width="3" d="M50.154 18.447a4.688 4.688 0 0 1 0 6.629l-26.55 26.55a4.687 4.687 0 0 1-6.63 0L3.718 38.368a4.688 4.688 0 0 1 0-6.63l26.55-26.55a4.687 4.687 0 0 1 6.628 0l6.63 6.63 9.444-9.444"/>
+      <path stroke="#405FF2" stroke-linecap="round" stroke-linejoin="round" stroke-miterlimit="10" stroke-width="3" d="M18.963 31.075a4.688 4.688 0 1 1 15.91-5.304M16.975 38.367l3.314-3.314m13.258-13.258 3.315-3.315"/>
+      <path stroke="#FF5CF4" stroke-linecap="round" stroke-linejoin="round" stroke-miterlimit="10" stroke-width="3" d="m43.594 57.686 14.062-14.063"/>
+    </g>
+  </g>
+  <defs>
+    <clipPath id="a">
+      <path fill="#fff" d="M0 .03h60v60H0z"/>
+    </clipPath>
+  </defs>
+</svg>
