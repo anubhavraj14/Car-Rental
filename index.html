@@ -30,12 +30,22 @@
 
 
     <!-- ----------header--------- -->
-    <header class="header-container mt-5 px-32">
-        <!-- ----------Navigation-bar--------- -->
-        <nav class="nav-container flex justify-between">
-
-            <ul class="nav-left w-1/2 flex justify-between items-center gap-1.5 pr-12">
-                <li><a class="font-oswald font-semibold text-2xl" href="index.html">BOXCARS</a></li>
+    <header class="header-container mt-5 px-8 md:px-32">
+        <!-- Navigation-bar -->
+        <nav class="nav-container flex justify-between items-center relative">
+            
+            <!-- Left Side (Brand & Nav Links) -->
+            <div class="flex items-center w-full md:w-1/2 justify-between md:justify-start">
+                <a class="font-oswald font-semibold text-2xl" href="index.html">BOXCARS</a>
+    
+                <!-- Hamburger Icon for Mobile -->
+                <button id="menu-toggle" class="text-2xl md:hidden">
+                    ☰
+                </button>
+            </div>
+    
+            <!-- Nav Links (Hidden on mobile, visible on md and up) -->
+            <ul id="nav-links" class="hidden absolute top-12 left-0 w-full bg-white shadow-lg p-5 flex-col gap-3 items-center md:flex md:flex-row md:relative md:top-0 md:w-1/2 md:justify-between md:items-center md:gap-1.5 md:pr-12">
                 <li><a class="text-xs font-medium" href="index.html">Home</a></li>
                 <li><a class="text-xs font-medium" href="index.html">Listings</a></li>
                 <li><a class="text-xs font-medium" href="index.html">Blog</a></li>
@@ -43,14 +53,22 @@
                 <li><a class="text-xs font-medium" href="index.html">About</a></li>
                 <li><a class="text-xs font-medium" href="index.html">Contact</a></li>
             </ul>
-
-            <ul class="z-10 W-1/2 flex items-center mr-10">
+    
+            <!-- Right Side (Buttons) -->
+            <ul class="hidden md:flex z-10 w-1/2 items-center mr-10">
                 <li><a class="px-3 py-2 mr-3 text-white text-xs font-medium" href="index.html">Sign in</a></li>
                 <li><a class="px-5 py-2 text-white text-xs font-medium border border-white rounded-xl" href="index.html">Submit Listing</a></li>
             </ul>
         </nav>
-
     </header>
+    
+    <!-- JavaScript for Mobile Menu Toggle -->
+    <script>
+        document.getElementById("menu-toggle").addEventListener("click", function() {
+            document.getElementById("nav-links").classList.toggle("hidden");
+        });
+    </script>
+    
 
 
 
