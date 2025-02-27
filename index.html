@@ -240,12 +240,7 @@
 
 
         <!-- -----------featured-listing-section--------- -->
-        <section class="px-5 lg:mt-20 lg:px-32">
-            <div class="flex justify-center lg:justify-between">
-                <h2 class="text-3xl font-semibold">Feature Listings</h2> 
-                <p class="hidden lg:flex text-xs font-sans">View All</p>
-            </div>
-        </section>
+        
 
 
 
@@ -439,6 +434,37 @@
             </div>
         </section>
 
+
+
+
+        <!-- ------chat-bot----------- -->
+        <button id="chat-btn"
+            class="fixed bottom-5 right-5 w-16 h-16 bg-blue-600 z-40 text-white rounded-full shadow-lg flex items-center justify-center text-2xl">
+            🤖
+        </button>
+        
+        <!-- Chat Modal -->
+        <div id="chat-modal" class="fixed inset-0 bg-black bg-opacity-50 justify-center items-center hidden z-50">
+            <div class="bg-white w-2/3 h-5/6 rounded-lg shadow-lg flex flex-col">
+        
+                <!-- Header -->
+                <div class="bg-blue-600 text-white p-4 flex justify-between items-center">
+                    <h2 class="text-lg font-semibold">Chat with AI</h2>
+                    <button id="close-chat" class="text-white text-xl">✖</button>
+                </div>
+        
+                <!-- Chat Area -->
+                <div id="chat-box" class="flex-1 p-4 overflow-y-auto space-y-4"></div>
+        
+                <!-- Input Area -->
+                <div class="p-3 border-t flex">
+                    <label class="text-white dark:text-gray-700" for="user-input">.</label>
+                    <input id="user-input" type="text" class="flex-1 border rounded-lg p-2" placeholder="Type a message...">
+                    <button id="send-btn" class="ml-2 bg-blue-600 text-white px-4 py-2 rounded-lg">Send</button>
+                </div>
+            </div>
+        </div>
+
     </main>
 
 
@@ -526,7 +552,7 @@
 
 
 
-
+    <script src="script.js"></script>
 
 </body>
 </html>
