@@ -8,6 +8,7 @@
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/tailwindcss@2.0.2/dist/tailwind.min.css">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css">
     <link href="https://fonts.googleapis.com/css2?family=Oswald:wght@200..700&display=swap" rel="stylesheet">
     <script src="https://cdn.tailwindcss.com"></script> <!--  automatically update the tailwindcss version -->
     <script>
@@ -24,6 +25,25 @@
             }
         };
     </script>
+    <style>
+        html {
+            scroll-behavior: smooth;
+        }
+
+        .hide-horizontal-scrollbar {
+            overflow-x: auto;
+            white-space: nowrap;
+            scrollbar-width: none;
+            /* Firefox */
+            -ms-overflow-style: none;
+            /* IE and Edge */
+        }
+
+        .hide-horizontal-scrollbar::-webkit-scrollbar {
+            display: none;
+            /* Chrome, Safari */
+        }
+    </style>
 
 </head>
 <body class="w-fit md:w-full">
@@ -38,7 +58,7 @@
                 <a class="font-oswald font-semibold text-2xl lg:mr-5" href="index.html">BOXCARS</a>
     
                 <!-- Hamburger Icon for Mobile -->
-                <button id="menu-toggle" class="text-2xl lg:hidden">
+                <button id="menu-toggle" class="text-2xl lg:hidden focus:outline-none focus:ring-0">
                     ☰
                 </button>
             </div>
@@ -128,26 +148,21 @@
         <!-- ---------brand-listing-section--------- -->
         <section class="mt-20 lg:mt-40 px-5 lg:px-32">
             <div class="flex flex-col">
-
-                <div class="flex justify-center lg:justify-between  items-center mb-8">
+                <div class="flex justify-center lg:justify-between items-center mb-8">
                     <h2 class="text-3xl flex text-center font-semibold justify-center">Explore Our Premium Brands</h2>
-                    <p class="hidden lg:flex text-xs font-sans">Show All Brands</p>
+                    <p id="showAllDesktop" class="hidden lg:flex text-xs font-sans cursor-pointer">Show All Brands</p>
                 </div>
-
+        
                 <div>
-                    <ul class="grid grid-cols-1 gap-6 md:grid-cols-6 md:gap-6 px-5 lg:px-0">
-                        <li><a class="px-4 py-4 flex flex-col border border-gray-300  lg:border-gray-200 rounded-lg" href=""><img class="w-20 flex justify-center m-auto items-center" src="assets\images\audi-logo.png" alt="audi-logo"> <span class="font-semibold text-xs text-center">Audi</span></a></li>
-                        <li><a class="px-4 py-4 flex flex-col border border-gray-300  lg:border-gray-200 rounded-lg" href=""><img class="w-20 flex justify-center m-auto items-center" src="assets\images\bmw-logo.png" alt="bmw-logo"> <span class="font-semibold text-xs text-center">BMW</span></a></li>
-                        <li><a class="px-4 py-4 flex flex-col border border-gray-300  lg:border-gray-200 rounded-lg" href=""><img class="w-20 flex justify-center m-auto items-center" src="assets\images\ford-logo.png" alt="ford-logo"> <span class="font-semibold text-xs text-center">Ford</span></a></li>
-                        <li><a class="px-4 py-4 flex flex-col border border-gray-300  lg:border-gray-200 rounded-lg" href=""><img class="w-20 flex justify-center m-auto items-center" src="assets\images\mercedes-logo.png" alt="mercedes-logo"> <span class="font-semibold text-xs text-center">Mercedes Benz</span></a></li>
-                        <li><a class="px-4 py-4 flex flex-col border border-gray-300  lg:border-gray-200 rounded-lg" href=""><img class="w-20 flex justify-center m-auto items-center" src="assets\images\peugeot-logo.png" alt="peugeot-logo"> <span class="font-semibold text-xs text-center">Peugeot</span></a></li>
-                        <li><a class="px-4 py-4 flex flex-col border border-gray-300  lg:border-gray-200 rounded-lg" href=""><img class="w-20 flex justify-center m-auto items-center" src="assets\images\volkswagen.png" alt="volkswagen"> <span class="font-semibold text-xs text-center">Volkswagen</span></a></li>
+                    <ul id="brandList" class="grid grid-cols-1 gap-6 md:grid-cols-6 md:gap-6 px-5 lg:px-0">
+                        <!-- Brands will be populated dynamically -->
                     </ul>
                 </div>
-                <a class=" text-center mt-5 text-xs font-sans lg:hidden">Show All Brands</a>
-
+                <a id="showAllMobile" class="text-center mt-5 text-xs font-sans lg:hidden cursor-pointer">Show All Brands</a>
             </div>
         </section>
+        
+        
 
 
         <!-- -------services-section--------- -->
@@ -240,6 +255,43 @@
 
 
         <!-- -----------featured-listing-section--------- -->
+        <section class="px-5 lg:mt-20 lg:px-32">
+            <!-- <div class="flex justify-center lg:justify-between">
+                <h2 class="text-3xl font-semibold">Feature Listings</h2> 
+                <p class="hidden lg:flex text-xs font-sans">View All</p>
+            </div>
+            <div class="container mx-auto py-10"> -->
+                <!-- Filter Tabs -->
+                <!-- <div class="flex space-x-6">
+                    <button class="tab-btn text-lg border-b-2 border-blue-500 text-black pb-2 font-bold focus:outline-none focus:ring-0" data-category="all">
+                        In Stock
+                    </button>
+                    <button class="tab-btn text-lg font-semibold text-gray-500 pb-2 focus:outline-none focus:ring-0" data-category="new">
+                        New Cars
+                    </button>
+                    <button class="tab-btn text-lg font-semibold text-gray-500 pb-2 focus:outline-none focus:ring-0" data-category="used">
+                        Used Cars
+                    </button>
+                </div>
+                
+                 -->
+        
+                <!-- Car Listings -->
+                <!-- <div class="relative mt-6 overflow-hidden">
+                    <div id="car-listings" class="py-5 flex overflow-hidden hide-horizontal-scrollbar space-x-6 overflow-x-auto scroll-smooth snap-x snap-mandatory lg:py-5 lg:flex lg:space-x-6 lg:whitespace-nowrap"> -->
+                        <!-- Cards will be injected here -->
+                <!-- </div> -->
+                      
+        
+                    <!-- Slider Controls -->
+                    <!-- <div class="flex gap-5 mt-4">
+                        <button id="prevBtn" class="p-2  hover:bg-gray-900 hover:text-white text-base sm:text-sm lg:text-xs font-medium px-4 py-2 sm:py-3 lg:py-2 border border-gray-300 lg:border-gray-200 rounded-2xl">&lt;</button>
+                        <button id="nextBtn" class="p-2  hover:bg-gray-900 hover:text-white text-base sm:text-sm lg:text-xs font-medium px-4 py-2 sm:py-3 lg:py-2 border border-gray-300 lg:border-gray-200 rounded-2xl">&gt;</button>
+                    </div> -->
+                </div>
+            </div>
+        </section>
+        
         
 
 
@@ -552,7 +604,9 @@
 
 
 
-    <script src="script.js"></script>
+    <script defer src="script.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+
 
 </body>
 </html>

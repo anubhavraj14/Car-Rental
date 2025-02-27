@@ -176,6 +176,23 @@
         "category": "in-stock",
         "image": "./assets/images/car19-660x440.jpg.png"
     }
-  ]
+  ],
+
+
+
+  "brands": [
+    { "name": "Audi", "img": "assets/images/audi-logo.png" },
+    { "name": "BMW", "img": "assets/images/bmw-logo.png" },
+    { "name": "Ford", "img": "assets/images/ford-logo.png" },
+    { "name": "Mercedes Benz", "img": "assets/images/mercedes-logo.png" },
+    { "name": "Peugeot", "img": "assets/images/peugeot-logo.png" },
+    { "name": "Volkswagen", "img": "assets/images/volkswagen.png" },
+    { "name": "Toyota", "img": "assets/images/bmw-logo.png" },
+    { "name": "Nissan", "img": "assets/images/bmw-logo.png" },
+    { "name": "Chevrolet", "img": "assets/images/bmw-logo.png" },
+    { "name": "Hyundai", "img": "assets/images/bmw-logo.png" },
+    { "name": "Honda", "img": "assets/images/bmw-logo.png" }
+]
+
 
 }
