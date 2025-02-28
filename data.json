@@ -54,129 +54,92 @@
   ],
 
 
-  "cars":[
+
+  
+  "cars": [
     {
-        "id": 1,
-        "name": "T-Cross",
-        "year": 2023,
-        "miles": "15 Miles",
-        "fuel": "Petrol",
-        "transmission": "CVT",
-        "price": "$15,000",
-        "category": "in-stock",
-        "image": "./assets/images/car9-660x440.jpg.png"
-    },
-    {
-        "id": 2,
-        "name": "C-Class",
-        "year": 2023,
-        "miles": "50 Miles",
-        "fuel": "Petrol",
-        "transmission": "Automatic",
-        "price": "$150,000",
-        "category": "new",
-        "image": "./assets/images/car14-660x440.jpg.png"
-    },
-    {
-      "id": 2,
-      "name": "C-Class",
-      "year": 2023,
-      "miles": "50 Miles",
+      "name": "Toyota Corolla",
+      "tagline": "Reliable and fuel-efficient",
+      "image": "assets/cars/toyota-corolla.jpg",
+      "mileage": "30 MPG",
       "fuel": "Petrol",
-      "transmission": "Automatic",
-      "price": "$150,000",
-      "category": "new",
-      "image": "./assets/images/car14-660x440.jpg.png"
+      "gear": "Automatic",
+      "price": "$20,000",
+      "condition": "New Cars"
     },
     {
-        "id": 3,
-        "name": "Ford Transit",
-        "year": 2021,
-        "miles": "2500 Miles",
-        "fuel": "Diesel",
-        "transmission": "Manual",
-        "price": "$22,000",
-        "category": "used",
-        "image": "./assets/images/car13-660x440.jpg.png"
+      "name": "Honda Civic",
+      "tagline": "Sporty and stylish",
+      "image": "assets/cars/honda-civic.jpg",
+      "mileage": "32 MPG",
+      "fuel": "Petrol",
+      "gear": "Manual",
+      "price": "$22,000",
+      "condition": "New Cars"
     },
     {
-        "id": 4,
-        "name": "New GLC",
-        "year": 2023,
-        "miles": "50 Miles",
-        "fuel": "Petrol",
-        "transmission": "Automatic",
-        "price": "$95,000",
-        "category": "in-stock",
-        "image": "./assets/images/car19-660x440.jpg.png"
+      "name": "Ford Mustang",
+      "tagline": "Power and performance",
+      "image": "assets/cars/ford-mustang.jpg",
+      "mileage": "20 MPG",
+      "fuel": "Petrol",
+      "gear": "Automatic",
+      "price": "$35,000",
+      "condition": "New Cars"
     },
     {
-        "id": 5,
-        "name": "New GLC",
-        "year": 2023,
-        "miles": "50 Miles",
-        "fuel": "Petrol",
-        "transmission": "Automatic",
-        "price": "$95,000",
-        "category": "in-stock",
-        "image": "./assets/images/car19-660x440.jpg.png"
+      "name": "BMW X5",
+      "tagline": "Luxury and comfort",
+      "image": "assets/cars/bmw-x5.jpg",
+      "mileage": "25 MPG",
+      "fuel": "Diesel",
+      "gear": "Automatic",
+      "price": "$60,000",
+      "condition": "New Cars"
     },
     {
-        "id": 6,
-        "name": "New GLC",
-        "year": 2023,
-        "miles": "50 Miles",
-        "fuel": "Petrol",
-        "transmission": "Automatic",
-        "price": "$95,000",
-        "category": "in-stock",
-        "image": "./assets/images/car19-660x440.jpg.png"
+      "name": "Honda Accord",
+      "tagline": "Spacious and efficient",
+      "image": "assets/cars/honda-accord.jpg",
+      "mileage": "29 MPG",
+      "fuel": "Hybrid",
+      "gear": "Automatic",
+      "price": "$28,000",
+      "condition": "Used Cars"
     },
     {
-        "id": 7,
-        "name": "New GLC",
-        "year": 2023,
-        "miles": "50 Miles",
-        "fuel": "Petrol",
-        "transmission": "Automatic",
-        "price": "$95,000",
-        "category": "in-stock",
-        "image": "./assets/images/car19-660x440.jpg.png"
+      "name": "Tesla Model 3",
+      "tagline": "Electric and innovative",
+      "image": "assets/cars/tesla-model3.jpg",
+      "mileage": "250 Miles/Charge",
+      "fuel": "Electric",
+      "gear": "Automatic",
+      "price": "$40,000",
+      "condition": "Used Cars"
     },
     {
-        "id": 8,
-        "name": "New GLC",
-        "year": 2023,
-        "miles": "50 Miles",
-        "fuel": "Petrol",
-        "transmission": "Automatic",
-        "price": "$95,000",
-        "category": "in-stock",
-        "image": "./assets/images/car19-660x440.jpg.png"
+      "name": "Chevrolet Silverado",
+      "tagline": "Strong and reliable",
+      "image": "assets/cars/chevy-silverado.jpg",
+      "mileage": "18 MPG",
+      "fuel": "Diesel",
+      "gear": "Automatic",
+      "price": "$50,000",
+      "condition": "Used Cars"
     },
     {
-        "id": 9,
-        "name": "New GLC",
-        "year": 2023,
-        "miles": "50 Miles",
-        "fuel": "Petrol",
-        "transmission": "Automatic",
-        "price": "$95,000",
-        "category": "in-stock",
-        "image": "./assets/images/car19-660x440.jpg.png"
-    },
-    {
-        "id": 10,
-        "name": "New GLC",
-        "year": 2023,
-        "miles": "50 Miles",
-        "fuel": "Petrol",
-        "transmission": "Automatic",
-        "price": "$95,000",
-        "category": "in-stock",
-        "image": "./assets/images/car19-660x440.jpg.png"
+      "name": "Nissan Altima",
+      "tagline": "Affordable and efficient",
+      "image": "assets/cars/nissan-altima.jpg",
+      "mileage": "31 MPG",
+      "fuel": "Petrol",
+      "gear": "Automatic",
+      "price": "$19,000",
+      "condition": "Used Cars"
     }
   ],
+
+  
 
 
 

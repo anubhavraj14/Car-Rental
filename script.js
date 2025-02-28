@@ -244,3 +244,23 @@ document.addEventListener("DOMContentLoaded", () => {
   showAllDesktop.addEventListener("click", toggleBrands);
   showAllMobile.addEventListener("click", toggleBrands);
 });
+
+
+
+
+{
+  if ("serviceWorker" in navigator) {
+    navigator.serviceWorker.register("/service-worker.js")
+      .then(() => console.log("Service Worker Registered"))
+      .catch((error) => console.log("Service Worker Registration Failed", error));
+  }
+   
+  let deferredPrompt;
+  window.addEventListener("beforeinstallprompt", (event) => {
+    event.preventDefault();
+    deferredPrompt = event;
+   
+  });
+   
+  }
+   
